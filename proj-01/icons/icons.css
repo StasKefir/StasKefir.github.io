@@ -1,0 +1,47 @@
+.i-calendar{
+    display: inline-block;
+    background: url(./svg/calendar.svg);
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.i-enterprise{
+    display: inline-block;
+    background: url(./svg/enterprise.svg);
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.i-responsive{
+    display: inline-block;
+    background: url(./svg/responsive.svg);
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.i-server{
+    display: inline-block;
+    background: url(./svg/server.svg);
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.i-left-arrow {
+    display: inline-block;
+    background: url(./svg/left-arrow.svg);
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.i-right-arrow {
+    display: inline-block;
+    background: url(./svg/right-arrow.svg);
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project</title>
+        <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico"/>
+        <link rel="stylesheet" href="icons/icons.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="content">
+             <div class="nav">
+                 <ul>
+                    <li class="nav-el"><a href="#">lorem</a></li>
+                    <li class="nav-el"><a onclick="ScrollDown()">lorem</a></li>
+                    <li class="nav-el"><a onclick="ScrollDownShow()">lorem</a></li>
+                    <li class="nav-el"><a href="#">lorem</a></li>
+                    <li class="nav-el"><a href="#">lorem</a></li>
+                 </ul>
+             </div>
+            <div class="two-blocks-and">
+                <div class="left-block">
+                    <div class="wraper">
+                         <p class="left-header">Lorem ipsum dolor 
+                             <span class="yellow-color">sit amet</span></p>
+                         <p class="left-content">Lorem ipsum dolor sit amet consecteture</p>
+                         <p class="left-content">Lorem ipsum dolor sit amet consecteture</p>
+                         <p class="left-content">Lorem ipsum dolor sit amet consecteture</p>
+                         <button href="#" class="left-btn">Lorem</button>
+                    </div>
+                </div>
+                <div class="empty"></div>
+                <div class="right-block">
+                    <div class="step">
+                        <span class="number">1</span>
+                       <span class="i-calendar"></span>
+                        <div class="right-content">
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="number">2</span>
+                        <span class="i-enterprise"></span>
+                        <div class="right-content">
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="number">3</span>
+                        <span class="i-responsive"></span>
+                        <div class="right-content">
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="number">4</span>
+                        <span class="i-server"></span>
+                        <div class="right-content">
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contactGallery" class="contact-gallery">
+        <div class="contact">
+            <form name="contacts"> 
+                <div class="f-contacts"> 
+                    <h2 id="formHeader">Contact us</h2>
+                    <input placeholder="Full name" type="text" class="full-name">
+                    <input placeholder="Email" type="text" class="full-name">
+                    <textarea placeholder="Type text here" cols="30" rows="10" class="type-text full-name"></textarea>
+                    <div class="check-container"> 
+                        <label class="container">Some text here
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="gallery">
+            <div class="title">Gallery</div>
+            <div class="photos">
+                <div class="col-left">
+                    <img src="./img/img1.jpg">
+                    <img src="./img/img2.jpg">
+                    <img src="./img/img3.jpg">
+                </div>
+                <div class="col-right">
+                    <img  src="./img/img4.jpg">
+                    <img  src="./img/img5.jpg">
+                    <img  src="./img/img6.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselShow" class="carousel">
+        <div class="carousel-content">
+            <div class="description">
+                <div id="titleCarousel" class="title">Carousel</div>
+                <div class="text-description">But I must explain to you how all this mistaken idea of denouncing of
+                    a pleasure and praising pain was born and I will give you a complete account of the system,
+                    and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+                    No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+                    but because those who do not know how to pursue pleasure rationally encounter consequences that are 
+                    extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, 
+                    because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great 
+                    pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, 
+                    except to obtain some advantage from it? But who has any right to find fault with a man 
+                    who chooses to enjoy a pleasure that has no annoying consequences,
+                    or one who avoids a pain that produces no resultant pleasure?
+                </div>
+                <button href="#" class="left-btn">Lorem</button>
+            </div>
+            <div class="slideshow">
+                <div class="img-nature">
+                    <img src="./img/karou1.jpg" alt="" class="thunderstorm">
+                    <img src="./img/karou2.jpg" alt="" class="thunderstorm">
+                    <img src="./img/karou3.jpg" alt="" class="thunderstorm">
+                    <img src="./img/karou4.jpg" alt="" class="thunderstorm">
+                    <img src="./img/karou5.jpg" alt="" class="thunderstorm">
+                </div>
+                <div class="nature-btn">
+                        <button class="transition" onclick="minusDivs()"><span class="i-left-arrow"></span></button>
+                        <!-- <span class="demo" onclick="currentDiv(1)"></span>
+                        <span class="demo" onclick="currentDiv(2)"></span>
+                        <span class="demo" onclick="currentDiv(3)"></span>
+                        <span class="demo" onclick="currentDiv(4)"></span>
+                        <span class="demo" onclick="currentDiv(5)"></span> -->
+                        <button class="transition" onclick="plusDivs()"><span class="i-right-arrow"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

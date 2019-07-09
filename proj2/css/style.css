@@ -1,0 +1,351 @@
+body,
+html,
+p {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(252, 249, 249);
+}
+
+.ring-road {
+    overflow: hidden;
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+}
+
+.navigation {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-elements {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-element li {
+    list-style: none;
+}
+
+.nav-element {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+    padding: 14px 0px;
+    color: rgb(252, 249, 249);
+}
+
+.nav-element a::before {
+    content: '';
+    width: 40px;
+    position: absolute;
+    border-bottom: 4px solid rgb(252, 249, 249);
+    bottom: 0;
+    right: 120px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.nav-element a:hover::before {
+    right: 0;
+}
+
+.left-side {
+    padding-left: 60px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20px;
+}
+
+.icon-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(252, 249, 249);
+}
+
+.right-side {
+    padding-right: 60px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20px;
+}
+
+.about-us {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252, 249, 249);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.icon-search {
+    color: rgb(102, 101, 101);
+}
+
+/* content*/
+.center-block {
+    position: relative;
+    height: 100%;
+    max-width: 980px;
+    margin: 0 150px;
+    padding: 50px 0px;
+}
+
+.text-head {
+    width: 300px;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 80px;
+    letter-spacing: 0.2em;
+    color: rgb(252, 249, 249);
+}
+
+.text-head-description {
+    padding-top: 10px;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7em;
+    font-size: 15px;
+    color: rgb(252, 249, 249);
+}
+
+.three-descriptions {
+    width: 100%;
+    display: flex;
+    margin-top: 70px;
+}
+
+.desc-block {
+    width: 25%;
+    padding-right: 15px;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1em;
+    font-size: 15px;
+    color: rgb(252, 249, 249);
+}
+
+.desc-block h3 {
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(252, 249, 249);
+}
+
+.desc-block p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7em;
+    font-size: 15px;
+    color: rgb(252, 249, 249);
+}
+
+/* left-block */
+.left-block {
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+
+
+}
+
+.left-block-filling {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    margin-bottom: 60px;
+}
+
+.left-block-filling p {
+    transform: rotate(-90deg);
+    margin-bottom: 100px;
+}
+
+/* right-block */
+
+.right-block {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 465px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.right-block-wrapper {
+    width: 250px;
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-desc h3 {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.video-desc {
+    height: 50px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: rgb(252, 249, 249);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1020px) {
+
+    .ring-road {
+        height: 100%;
+    }
+
+    .right-block {
+        position: static;
+        width: 100vw;
+        /* height: 100%; */
+    }
+
+    .right-block-wrapper {
+        width: 80vw;
+        flex-direction: row;
+        /* height: 100%; */
+    }
+
+    .left-block {
+        top: 200px;
+    }
+
+    .center-block {
+        margin: 0 0;
+        position: relative;
+        left: 150px;
+        top: 0px;
+    }
+
+    .desc-block h3 {
+        line-height: initial;
+    }
+
+    .order-last {
+        order: 1;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .navigation {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .right-side {
+        width: 450px;
+    }
+
+    .about-us {
+        padding-left: 130px;
+    }
+
+    .order-last {
+        flex-wrap: wrap;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 650px) {
+    .three-descriptions {
+        flex-direction: column;
+    }
+
+    .right-block-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .right-block {
+        position: static;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .right-block-wrapper {
+        width: 80vw;
+        flex-direction: row;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .nav-elements {
+        display: none;
+
+    }
+
+    .right-side {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+}
