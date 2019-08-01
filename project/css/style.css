@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700&display=swap');
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff'),
+        url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url('../fonts/GothamPro-Bold.eot');
+    src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamPro-Bold.woff') format('woff'),
+        url('../fonts/GothamPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url('../fonts/GothamPro-Medium.eot');
+    src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamPro-Medium.woff') format('woff'),
+        url('../fonts/GothamPro-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/GothamBook.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    position: relative;
+}
+
+a:after {
+    background-color: #11749e;
+    display: block;
+    content: "";
+    height: 4px;
+    width: 0%;
+    left: 50%;
+    top: 260%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+a:hover:after,
+a:focus:after {
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+.wrap-cont {
+    position: relative;
+}
+
+.container-absolute {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    /* cursor: pointer; */
+    z-index: +1;
+}
+
+.nav-wrap {
+    padding: 20px 0 20px 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.tabs li {
+    list-style: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.tabs-and-social {
+    display: flex;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.tabs ul {
+    margin-bottom: 0;
+    font-family: 'Myriad Pro Regular';
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: #11749e;
+}
+
+.tagline {
+    background-image: url(../img/first-screen-back.png);
+    color: #ffffff;
+    background-size: cover;
+}
+
+.first-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-screen-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 280px;
+}
+
+.first-screen-text h1 {
+    font-family: 'Gotham Pro Bold';
+    text-transform: uppercase;
+    font-size: 150px;
+}
+
+.first-screen-text h3 {
+    font-family: 'Gotham Pro Medium';
+    font-size: 25px;
+    color: #11749e;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+
+.scroll-content {
+    padding-top: 140px;
+    padding-bottom: 110px;
+}
+
+.scroll-btn-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a:focus:after {
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+.scroll-btn-block a:hover:after,
+.scroll-btn-block a:focus:after {
+    width: 0;
+}
+
+.arr-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer !important;
+    transition: 0.7s;
+}
+
+.we-are {
+    background-color: #11749e;
+    color: #ffffff;
+}
+
+.we-are-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 180px 0 150px 0;
+}
+
+.title-we-are {
+    color: #ffffff;
+    font-family: 'Gotham Pro Medium';
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.hidden-letter {
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 250px;
+    opacity: 0.3;
+}
+
+.cards {
+    padding-bottom: 130px;
+}
+
+.card-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-icon {
+    margin-bottom: 20px;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-block-head {
+    text-transform: uppercase;
+    font-family: 'Gotham Pro Medium';
+    font-size: 18px;
+}
+
+.card-block-description {
+    padding-top: 30px;
+    font-family: 'Gotham Book';
+    font-size: 15px;
+}
+
+/* /////// */
+
+.contacts-form {
+    background-image: url(../img/fon3.png);
+    background-size: cover;
+    padding-bottom: 130px;
+}
+
+.form-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 180px 0 150px 0;
+    margin-top: 0;
+}
+
+.cell-data-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.cell-data input {
+    height: 50px;
+    color: #ffffff;
+}
+
+.form-input {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #ffffff;
+}
+
+.message-wrap {
+    height: 150px;
+}
+
+.area-mess {
+    height: 100%;
+    color: #ffffff;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.button-submit {
+    height: 65px;
+    /* width: 230px; */
+    margin-top: 50px;
+    background-color: #11749e;
+    font-family: 'Gotham Pro Medium';
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    /* text-align: center; */
+}
+
+footer {
+    background-color: #222222;
+    height: 130px;
+}
+
+.container-footer {
+    height: 100%;
+}
+
+.footer-row {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+#footer-logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 991px) {
+    a:after {top: 20}
+
+    .tabs ul {
+        font-size: 18px;
+    }
+
+    .social {
+        font-size: 16px;
+    }
+
+    .first-screen-text h1 {
+        font-size: 120px;
+    }
+
+    .first-screen-text h3 {
+        font-size: 25px;
+        letter-spacing: 12px;
+    }
+
+    .cards {
+        padding-bottom: 100px;
+    }
+
+    .card-block {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .card-block-description {
+        text-align: center;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tabs ul {
+        font-size: 16px;
+    }
+
+    .social {
+        display: none;
+        font-size: 14px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .first-screen-text h1 {
+        font-size: 80px;
+    }
+
+    .first-screen-text h3 {
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+
+    .scroll-content {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+    .first-screen-text {
+        padding-top: 260px;
+    }
+
+    .arr-wrap {
+        height: 50px;
+        width: 50px;
+    }
+
+    .title-we-are {
+        font-size: 28px;
+    }
+
+    .hidden-letter {
+        font-size: 170px;
+    }
+
+    .we-are-text {
+        padding: 140px 0 150px 0;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .form-text {
+        padding: 130px 0 110px 0;
+    }
+
+    .cell-data-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cell-data {
+        padding-top: 20px;
+    }
+
+    .button-submit {
+        height: 45px;
+    }
+
+    .text-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer-logo {
+        justify-content: center;
+    }
+
+}
+@media screen and (min-width: 767px) {
+   
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+}

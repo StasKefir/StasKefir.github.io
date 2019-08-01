@@ -24,8 +24,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .logo {
@@ -178,7 +176,6 @@ body {
 
 .play-wrap {
     width: 100%;
-    /* height: 23.3vw; */
     height: 100%;
 }
 .play-wrap iframe {
@@ -191,7 +188,24 @@ body {
 }
 
 .video-play video {
-    /* margin: 0; padding: 0;
-     */
      object-fit: cover;
 }
+/* tabs */
+.tabs {
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.tab-header {
+    color: #838383;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 10px 0 10px;
+}
+
+.tab-header-active {
+    color: #171f23 !important;
+    font-weight: 800;
+}
+
