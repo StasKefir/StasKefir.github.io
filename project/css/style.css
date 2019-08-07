@@ -483,3 +483,32 @@ footer p {
         padding-bottom: 20px;
     }
 }
+@media screen and (max-width: 490px) {
+   
+    .first-screen-text h3 {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .first-screen-text h1 {
+        font-size: 40px;
+    }
+
+    .first-screen-text {
+        padding-top: 260px;
+    }
+    .arr-wrap {
+        height: 35px;
+        width: 35px;
+    }
+   
+    .tabs ul {
+        font-size: 12px;
+    }
+    .title-we-are {
+        font-size: 18px;
+    }
+    .hidden-letter {
+        font-size: 150px;
+        top: 30px;
+    }
+}
