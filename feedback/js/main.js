@@ -78,9 +78,9 @@ window.addEventListener('load', function () {
     function newDate() {
     let minutes = newDateVar.getMinutes(),
         hours = newDateVar.getHours(),
-        day = newDateVar.getDay(),
+        day = newDateVar.getDate(),
         month = newDateVar.getMonth();
-        dateNow = month+1 + " month " + day+1 + " day of week " + hours +":" + minutes;
+        dateNow = month+1 + " month " + day + " day  " + hours +":" + minutes;
     }
 
     function clearArea() {
