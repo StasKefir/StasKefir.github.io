@@ -76,7 +76,7 @@ textarea {
 }
 
 .img-photo {
-    height: auto;
+    height: 60%;
     width: 60%;
     margin: 0;
 }
@@ -186,7 +186,7 @@ textarea {
     }
 
     .img-photo {
-        height: auto;
+        height: 50%;
         width: 50%;
     }
 } 
@@ -201,6 +201,7 @@ textarea {
 
 
     .img-photo {
+        height: 30%;
         width: 30%;
     }
     
