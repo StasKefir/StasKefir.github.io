@@ -80,9 +80,7 @@ window.addEventListener('load', function () {
         hours = newDateVar.getHours(),
         day = newDateVar.getDate(),
         month = newDateVar.getMonth();
-        dateNow = month+1 + " month " + day + " day  " + hours +":" + minutes;
-        console.log(day);
-        console.log (dateNow);
+        dateNow = month+1 + " month " + day + " day  " + hours +":" + minutes + " ";
     }
 
     function clearArea() {
@@ -97,12 +95,11 @@ window.addEventListener('load', function () {
     }
 
     function createObject() {
-        newObjectData.Date = dateNow;
-        newObjectData.Like = likeArea.value;
-        newObjectData.Dislike = dislikeArea.value;
-        newObjectData.Etc = etcArea.value;
-        newObjectData.Rating = valueOfRating;
-        console.log(newObjectData);
+        newObjectData.Date = dateNow + " ";
+        newObjectData.Like = likeArea.value  + " ";
+        newObjectData.Dislike = dislikeArea.value  + " ";
+        newObjectData.Etc = etcArea.value  + " ";
+        newObjectData.Rating = valueOfRating  + " ";
     }
 
     addedActiveClass();
